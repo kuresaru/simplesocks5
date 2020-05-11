@@ -13,5 +13,9 @@
   "dependencies": {
     "socks5": "^1.0.1"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kuresaru/simplesocks5.git"
+  }
 }
