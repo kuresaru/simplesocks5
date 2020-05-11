@@ -1,12 +1,13 @@
 {
-  "name": "simplesocks5",
+  "name": "simplysocks5",
   "version": "1.0.0",
   "description": "A simply socks5 server",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:win32": "pkg -t node10-win-x86 src/index.js -o build/simplesocks5",
-    "build:linux": "pkg -t node10-linux src/index.js -o build/simplesocks5"
+    "build:win32": "pkg -t node10-win-x86 src/index.js -o build/simplysocks5",
+    "build:linux": "pkg -t node10-linux src/index.js -o build/simplysocks5",
+    "build": "npm run build:win32 && npm run build:linux"
   },
   "author": "Kuresaru",
   "license": "GPL-3.0",
@@ -16,6 +17,6 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/kuresaru/simplesocks5.git"
+    "url": "https://github.com/kuresaru/simplysocks5.git"
   }
 }
