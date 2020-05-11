@@ -5,15 +5,13 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:win32": "pkg -t win-x86 src/index.js -o build/simplesocks5",
-    "build:linux": "pkg -t linux src/index.js -o build/simplesocks5"
+    "build:win32": "pkg -t node10-win-x86 src/index.js -o build/simplesocks5",
+    "build:linux": "pkg -t node10-linux src/index.js -o build/simplesocks5"
   },
   "author": "Kuresaru",
   "license": "GPL-3.0",
   "dependencies": {
     "socks5": "^1.0.1"
   },
-  "devDependencies": {
-    "pkg": "^4.4.8"
-  }
+  "devDependencies": {}
 }

@@ -46,6 +46,7 @@ const server = ss.createServer((socket, port, address, ready) => {
         proxy.end();
         console.log("Client closed the connection" + remotestr);
     })
+    proxy.on('error', err => {});
 }, undefined);
 
 server.on('error', e => {
